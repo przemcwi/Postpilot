@@ -6,10 +6,14 @@
     --color-green: #009387;
     --color-orange: #FF6D2C;
     --color-yellow: #FDC639;
+    --color-quote-border: #D1C7BE;
     font-size: 10px;
 }
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color: #919191;
+    background-color: #FDF3EA;
     font-family: Inter, sans-serif;
 }
 
@@ -17,7 +21,7 @@ a{
     text-decoration: none;
 }
 
-div .a{
+div.a{
     display: flex;
     height: 30vh;
     align-items: center;
@@ -89,6 +93,16 @@ div .a{
 
 /* == heading block == */
 
+/* == subtitle  block== */
+
+.subtitle{
+    font-size: 2rem;
+    line-height: 3.4rem;
+    color: var(--color-grey);
+}
+
+/* == subtitle  block== */
+
 /* == rating block == */
 
 .stars--animation {
@@ -149,3 +163,40 @@ div .a{
 
 /* == rating block == */
 
+/* == quote block == */
+.quote{
+    border: 2px solid var(--color-quote-border);
+    border-radius: 1.5rem;
+    padding: 3.4rem;
+    max-width: 516px;
+    position: relative;
+}
+
+.quote__text{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    letter-spacing: .1rem;
+    color: var(--color-grey);
+    font-style: italic;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.quote__sign{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote__name{
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: var(--color-light-grey);
+}
+
+.quote__icon{
+    position: absolute;
+    top: -1.7rem;
+}
+
+/* == quote block == */
